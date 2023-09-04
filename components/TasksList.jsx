@@ -29,7 +29,7 @@ const TasksList = async () => {
     <>
         { tasks.map((task) => (
             
-            <div key={task._id} className="p-4 border border-slate-300 my-3 flex justify-between items-start">
+            <div key={task._id} className="p-4 border rounded-3xl bg-gradient-to-r from-gray-100 to-gray-300 border-slate-300 my-3 px-8 py-3 flex justify-between items-start hover:border-[#090c14] ease-in-out duration-500">
                 <div>
                     <h2 className="font-bold text-2xl">{task.title}</h2>
                     <div>{task.description}</div>
