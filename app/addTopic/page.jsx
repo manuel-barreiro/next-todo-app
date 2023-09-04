@@ -19,7 +19,7 @@ const page = () => {
     }
 
     try {
-      const res = await fetch("http://localhost:3000/api/tasks", {
+      const res = await fetch("/api/tasks", {
         method: "POST",
         headers: {
           "Content-type": "application/json",

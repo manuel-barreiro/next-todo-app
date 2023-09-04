@@ -2,8 +2,10 @@ import EditTaskForm from "@/components/EditTaskForm"
 
 
 async function getTaskById(id) {
+  const apiUrl = process.env.API_URL
+
   try {
-    const res = await fetch(`http://localhost:3000/api/tasks/${id}`, { cache: "no-store" })
+    const res = await fetch(`${apiUrl}/api/tasks/${id}`, { cache: "no-store" })
 
     if (!res.ok) {
       throw new Error("Failed to fetch task.")
